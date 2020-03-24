@@ -7,15 +7,15 @@ class Binarysearch {
 			if(arr[mid] == x)
 				return mid;
 			if(arr[mid] > x)
-				return binarySearch(arr, l, mid-1, x);
+				return binarySearch(arr, l, mid - 1, x);
 			else
-				return binarySearch(arr, mid+1, r, x);
+				return binarySearch(arr, mid + 1, r, x);
 		}
 		return -1;
 	}
 	public static void main(String[] args) {
 		Binarysearch b = new Binarysearch();
-		int arr[] = {2,4,6,8,10};
+		int arr[] = {2, 4, 6, 8, 10};
 		int l = 0;
 		int n = arr.length - 1;
 		int x = 10;
@@ -23,6 +23,6 @@ class Binarysearch {
 		if(result == -1)
 			System.out.println("Element not found");
 		else
-			System.out.println("Element found at index " +result);
+			System.out.println("Element found at index " + result);
 	}
 }

@@ -17,12 +17,12 @@ class Binarysearch {
 	}
 	public static void main (String[] args) {
 		Binarysearch b = new Binarysearch();
-		int arr[] = {10,20,30,40,50,60,70,80,90,100};
-		int x = 100;
+		int arr[] = {10, 20, 30, 40, 50};
+		int x = 40;
 		int result = b.binarySearch(arr, x);
 		if(result == -1)
 			System.out.println("Element not found");
 		else
-			System.out.println("Element " +x+ " is at index " +result+ ".");
+			System.out.println("Element is at index " +result+ ".");
 	}
 }
